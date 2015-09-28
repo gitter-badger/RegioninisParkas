@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="lt"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width">
+
+
+    <title>Gamta</title>
+
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic%7CSource+Code+Pro:400,700" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="file:///apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    <link rel="search" type="application/opensearchdescription+xml" href="file:///opensearch.xml" title="CSS-Tricks Search">
+
+
+    <!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Tips, Tricks, and Techniques on using Cascading Style Sheets.">
+    <link rel="canonical" href="https://css-tricks.com/">
+    <link rel="next" href="https://css-tricks.com/page/2/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CSS-Tricks">
+    <meta property="og:description" content="CSS-Tricks is a website about websites.">
+    <meta property="og:url" content="https://css-tricks.com">
+    <meta property="og:site_name" content="CSS-Tricks">
+    <meta property="og:image" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Tips, Tricks, and Techniques on using Cascading Style Sheets.">
+    <meta name="twitter:title" content="CSS-Tricks">
+    <meta name="twitter:site" content="@Real_CSS_Tricks">
+    <meta name="twitter:domain" content="CSS-Tricks">
+    <meta name="twitter:image" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png">
+    <script src="//www.google-analytics.com/analytics.js" async=""></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/css-tricks.com\/","name":"CSS-Tricks","potentialAction":{"@type":"SearchAction","target":"https:\/\/css-tricks.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <!-- / Yoast SEO plugin. -->
+
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
+            "ext": ".png",
+            "source": {
+                "concatemoji": "https:\/\/css-tricks.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"
+            }
+        };
+        ! function(a, b, c) {
+            function d(a) {
+                var c = b.createElement("canvas"),
+                    d = c.getContext && c.getContext("2d");
+                return d && d.fillText ? (d.textBaseline = "top", d.font = "600 32px Arial", "flag" === a ? (d.fillText(String.fromCharCode(55356, 56812, 55356, 56807), 0, 0), c.toDataURL().length > 3e3) : (d.fillText(String.fromCharCode(55357, 56835), 0, 0), 0 !== d.getImageData(16, 16, 1, 1).data[0])) : !1
+            }
+
+            function e(a) {
+                var c = b.createElement("script");
+                c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+            }
+            var f, g;
+            c.supports = {
+                simple: d("simple"),
+                flag: d("flag")
+            }, c.DOMReady = !1, c.readyCallback = function() {
+                c.DOMReady = !0
+            }, c.supports.simple && c.supports.flag || (g = function() {
+                c.readyCallback()
+            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+                "complete" === b.readyState && c.readyCallback()
+            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script><script type="text/javascript" src="GamtaV2_failai/wp-emoji-release_006.js"></script><script type="text/javascript" src="GamtaV2_failai/wp-emoji-release_005.js"></script><script type="text/javascript" src="GamtaV2_failai/wp-emoji-release_004.js"></script><script type="text/javascript" src="GamtaV2_failai/wp-emoji-release_003.js"></script><script type="text/javascript" src="GamtaV2_failai/wp-emoji-release_002.js"></script><script type="text/javascript" src="GamtaV2_failai/wp-emoji-release.js"></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="avatar-manager-css" href="GamtaV2_failai/avatar-manager.css" type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce-layout-css" href="GamtaV2_failai/woocommerce-layout.css" type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="GamtaV2_failai/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" id="woocommerce-general-css" href="GamtaV2_failai/woocommerce.css" type="text/css" media="all">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="GamtaV2_failai/avatar-manager.js"></script>
+    <script type="text/javascript" src="GamtaV2_failai/minqueue-ca14aaa7-f6a9f932.js"></script>
+    <!-- Better Art Direction Styles -->
+
+
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href="GamtaV2_failai/style.css">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-12/css/oldie.css">
+  <![endif]-->
+    <!--[if IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-12/style.css?v=7.6>
+  <![endif]-->
+
+
+
+<script src="//s3.buysellads.com/ac/bsa.js" async=""></script><script src="//s3.buysellads.com/ac/bsa.js" async=""></script><script src="//s3.buysellads.com/ac/bsa.js" async=""></script><script src="//s3.buysellads.com/ac/bsa.js" async=""></script><script src="//s3.buysellads.com/ac/bsa.js" async=""></script><script src="//s3.buysellads.com/ac/bsa.js" async=""></script></head>
+
+<body class="home blog">
+
+    <script>
+        (function() {
+            var bsa = document.createElement('script');
+            bsa.async = true;
+            bsa.src = "//s3.buysellads.com/ac/bsa.js";
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+        })();
+    </script>
+
+    <div class="page-wrap">
+
+        <header id="top" class="top">
+
+            <img src="GamtaV2_failai/fall2.jpg">
+
+
+            
+
+            <div class="second-bar">
+
+                <nav class="main-nav" id="main-nav">
+
+                    <a href="file:///" class="home">
+    Pagrindinis
+  </a>
+                    <a href="file:///video-screencasts/" class="videos">
+    Video
+  </a>
+                    <a href="file:///almanac/" class="almanac">
+    Nuotraukos
+  </a>
+                    <a href="file:///snippets/" class="snippets">
+    Naujienos
+  </a>
+                    <a class="forums" href="file:///forums/">
+    Forumai
+  </a>
+                    <a class="jobs" href="file:///jobs/">Darbai</a>
+                    <a href="file:///lodge/" class="lodge">
+    Kontaktai
+  </a>
+
+                </nav>
+                <section class="search" role="search">
+
+                    <form id="search-form" action="/search-results/">
+
+                        <div class="flexy-search">
+                            <label for="q" id="search-label">
+                                <span class="screen-reader">Search</span>
+                                <svg viewBox="0 0 100 100" class="shape-search">
+                                    <use xlink:href="#shape-search"></use>
+                                </svg>
+                            </label>
+                            <!-- type="text" here because of bug with youtube embeds UGHSKDGHK. -->
+                            <input aria-labelledby="search-label" id="q" required="" name="q" class="search-field" type="text">
+                        </div>
+
+                        <div>
+                            <input value="Search" class="screen-reader" type="submit">
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </header>
+
+        <div class="content-wrap">
+
+            <div class="grid group">
+
+                <section class="blog-posts grid-2-3">
+
+
+
+                    <article class="module module-blogpost" id="post-208300">
+
+                        <div class="byline">
+                            <a href="https://css-tricks.com/author/guestauthor/">
+                                <img alt="" class="avatar avatar-50 photo avatar-default" src="GamtaV2_failai/guest-author-50x50.png" height="50" width="50"> <span class="p-author">
+      Violeta    </span>
+                            </a>
+                            //
+                            <time datetime="2015-09-22" class="bar-time">
+                                Rugsėjo 23, 2015 </time>
+                        </div>
+                        <h2>
+            <a href="https://css-tricks.com/custom-interactive-range-inputs/">
+              Gamta            </a>
+          </h2><img src="GamtaV2_failai/ruduo.jpg">
+
+                        <p><em class="explanation">Blabla <a href="http://www.shearspiremedia.com/">Bla</a>. Bla.</em></p>
+                        <a class="read-article" href="https://css-tricks.com/custom-interactive-range-inputs/">Skaityti Straipsni →</a>
+
+                    </article>
+
+
+
+
+
+                    <article class="module module-blogpost" id="post-206761">
+
+                        <div class="byline">
+                            <a href="https://css-tricks.com/author/chriscoyier/">
+                                <img src="GamtaV2_failai/guest-author-50x50.png" alt="" srcset="https://secure.gravatar.com/avatar/e6e3b0dc1a26476da301047fb70784e5?s=100&amp;d=mm&amp;r=pg 2x" class="avatar avatar-50 photo" height="50" width="50"> <span class="p-author">
+      Autorius    </span>
+                            </a>
+                            //
+                            <time datetime="2015-09-21" class="bar-time">
+                                Rugsėjo 21, 2015 </time>
+                        </div>
+                        <h2>
+            <a href="https://css-tricks.com/how-to-do-knockout-text/">
+              Tekstas            </a>
+          </h2>
+
+                        <p>tekstas <strong>tekstas</strong>
+tekstas tekstas tekstas tekstas tekstas.…</p>
+                        <a class="read-article" href="https://css-tricks.com/how-to-do-knockout-text/">Skaityti Straipsni →</a>
+
+                    </article>
+
+
+
+
+
+                    <article class="module module-blogpost" id="post-208378">
+
+                        <div class="byline">
+                            <a href="https://css-tricks.com/author/chriscoyier/">
+                                <img src="GamtaV2_failai/guest-author-50x50.png" alt="" srcset="https://secure.gravatar.com/avatar/e6e3b0dc1a26476da301047fb70784e5?s=100&amp;d=mm&amp;r=pg 2x" class="avatar avatar-50 photo" height="50" width="50"> <span class="p-author">
+      Violeta    </span>
+                            </a>
+                            //
+                            <time datetime="2015-09-19" class="bar-time">
+                                Rugsėjo 19, 2015 </time>
+                        </div>
+                        <h2>
+            <a href="https://css-tricks.com/discussion-around-ad-blocking/">
+              Tekstas 2            </a>
+          </h2>
+
+                        <p>Tekstas</p>
+                        
+                        <a class="read-article" href="https://css-tricks.com/discussion-around-ad-blocking/">Skaityti Straipsni →</a>
+
+                    </article>
+
+
+                    <div class="bsap-doubles">
+                        <div id="bsap_1250418" class="bsarocks bsap_3469a2a501a9e18091036aa0c89f9dcb"></div>
+                    </div>
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+                    <p><a href="file:///archives/" class="button full-width-button">Daugiau</a>
+                    </p>
+
+                </section>
+
+                <aside class="grid-1-3 entry-unrelated sidebar">
+
+                    <div class="module module-image-ad module-treehouse">
+
+                        
+
+                        <img src="GamtaV2_failai/ruduo.jpg"><p>Tekstas po nuotrauka</p>
+
+                    </div>
+
+                    
+
+                    
+
+                    
+                </aside>
+            </div>
+
+        </div>
+        
+
+        
+
+        
+
+        <footer class="site-footer site-footer-links">
+            <h4>Puslapio adresai</h4>
+            <p>
+                <a href="file:///contact/">Konktaktai</a>
+                <a href="file:///about/">Apie</a>
+                <a href="file:///advertising/">Licenzija</a>
+                <a href="file:///guest-posting/">Atsiliepimai</a>
+                
+                
+                
+                
+            </p>
+        </footer>
+
+        
+
+    </div>
+    <svg width="0" height="0" class="screen-reader">
+
+        <defs>
+
+            <path id="shape-link" d="M74.957.955h-15.139c-1.307 0-2.59.1-3.844.293l-.811.151c4.645 2.666 8.469 6.605 10.986 11.343h9.584c7.322 0 13.258 5.937 13.258 13.259 0 7.321-5.938 13.258-13.258 13.258h-16.555c-3.305 0-6.324-1.212-8.645-3.212l-.004.003-.002-.003c-.494-.414-.886-.802-1.206-1.148-.7-.764-1.011-1.303-1.011-1.303l.002-.003-.002-.003c-1.505-2.15-2.389-4.766-2.389-7.589 0-2.746.834-5.296 2.263-7.413l.127-.176c-1.736-1.473-3.978-2.367-6.429-2.367h-5.041c-1.325 3.052-2.067 6.416-2.067 9.956 0 3.538.737 6.903 2.061 9.955.244.562.509 1.11.792 1.651.237.449.482.896.746 1.332l.054.088.147.23c2.792 4.463 6.948 7.98 11.888 9.973.608.246 1.225.473 1.856.67l.104.031.318.09c.27.08.541.162.814.232l.01.003c2 .513 4.096.787 6.254.787h15.137c13.832.001 25.045-11.212 25.045-25.043s-11.211-25.045-25.043-25.045zM25.542 51.045h15.137c1.308 0 2.592-.102 3.846-.294l.811-.151c-4.646-2.664-8.47-6.604-10.987-11.342h-9.585c-7.322 0-13.257-5.936-13.257-13.259 0-7.322 5.935-13.257 13.257-13.257h16.555c3.304 0 6.323 1.212 8.645 3.212l.002-.003.002.003c.495.413.888.801 1.206 1.148.701.762 1.012 1.302 1.012 1.302l-.002.003.002.003c1.506 2.15 2.391 4.766 2.391 7.588 0 2.746-.835 5.297-2.264 7.412l-.127.176c1.735 1.475 3.979 2.369 6.428 2.369h5.043c1.324-3.053 2.064-6.417 2.064-9.957 0-3.539-.736-6.903-2.061-9.955-.244-.561-.51-1.111-.792-1.651-.237-.451-.481-.898-.746-1.332l-.054-.089-.146-.23c-2.792-4.463-6.949-7.981-11.888-9.973-.608-.245-1.226-.471-1.856-.67l-.103-.032-.318-.089c-.27-.081-.541-.162-.816-.232l-.009-.002c-2-.515-4.095-.788-6.255-.788h-15.135c-13.832 0-25.044 11.212-25.044 25.044 0 13.833 11.212 25.046 25.044 25.046z"></path>
+
+            <path id="shape-search" d="M3.327,96.684C5.534,98.895,8.434,100,11.331,100s5.797-1.105,8.004-3.316l21.321-21.322
+    c5.83,3.188,12.393,4.897,19.223,4.897c10.721,0,20.798-4.172,28.379-11.752c15.646-15.644,15.646-41.105,0.002-56.755
+    C80.677,4.171,70.598,0,59.877,0C49.159,0,39.08,4.171,31.504,11.752c-7.581,7.576-11.756,17.655-11.756,28.376
+    c0,6.832,1.71,13.396,4.9,19.226L3.327,80.675C-1.096,85.094-1.096,92.266,3.327,96.684z M59.879,68.938
+    c-7.695,0-14.93-2.996-20.371-8.435c-5.443-5.442-8.439-12.677-8.439-20.375c0-7.695,2.996-14.933,8.439-20.372
+    c5.441-5.44,12.676-8.436,20.369-8.436c7.698,0,14.936,2.997,20.378,8.436c11.231,11.236,11.231,29.515,0,40.747
+    C74.812,65.941,67.575,68.938,59.879,68.938z"></path>
+
+            <path id="shape-arrow-right" d="M0,49.993c0,7.387,6.007,13.394,13.396,13.394h40.691L42.898,74.407c-2.543,2.507-3.94,5.827-3.94,9.36
+    c0,3.539,1.407,6.863,3.952,9.364C45.428,95.616,48.809,97,52.402,97c3.6,0,6.978-1.384,9.516-3.891l34.159-33.623
+    c2.53-2.489,3.923-5.81,3.923-9.342v-0.307c0-3.545-1.4-6.867-3.943-9.358L61.914,6.869c-5.243-5.16-13.775-5.16-19.014,0
+    c-2.539,2.495-3.942,5.821-3.942,9.354c0,3.535,1.403,6.862,3.942,9.354L54.1,36.604H13.396C6.012,36.604,0.001,42.61,0,49.993z"></path>
+
+        </defs>
+
+    </svg>
+
+    <script>
+        var pollsL10n = {
+            "ajax_url": "https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php",
+            "text_wait": "Your last request is still being processed. Please wait a while ...",
+            "text_valid": "Please choose a valid poll answer.",
+            "text_multiple": "Maximum number of choices allowed: ",
+            "show_loading": "0",
+            "show_fading": "1"
+        };
+    </script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/?wc-ajax=%%endpoint%%",
+            "i18n_view_cart": "View Cart",
+            "cart_url": "https:\/\/css-tricks.com\/cart\/",
+            "is_cart": "",
+            "cart_redirect_after_add": "no"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="GamtaV2_failai/add-to-cart.js"></script>
+    <script type="text/javascript" src="GamtaV2_failai/jquery_002.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var woocommerce_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/?wc-ajax=%%endpoint%%"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="GamtaV2_failai/woocommerce.js"></script>
+    <script type="text/javascript" src="GamtaV2_failai/jquery.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var wc_cart_fragments_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/?wc-ajax=%%endpoint%%",
+            "fragment_name": "wc_fragments"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="GamtaV2_failai/cart-fragments.js"></script>
+    <script type="text/javascript" src="GamtaV2_failai/minqueue-cb4ed8f2-cab950fc.js"></script>
+
+
+    <script src="GamtaV2_failai/global-min.js"></script>
+    <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-68528-29', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body></html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using apc
+Database Caching 61/83 queries in 0.268 seconds using apc
+Content Delivery Network via cdn.css-tricks.com
+
+ Served from: css-tricks.com @ 2015-09-23 10:51:01 by W3 Total Cache -->
